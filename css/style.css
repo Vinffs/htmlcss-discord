@@ -9,6 +9,12 @@
 .container{
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px 5px;
+}
+
+
+.debug{
+    border: 1px solid black;
 }
 
 
@@ -19,10 +25,6 @@
     --color-header-bg: #2A5EE8 ;
     --color-accessory: #7289DA;
 
-}
-
-.debug{
-    border: 1px solid black;
 }
 
 
@@ -42,6 +44,12 @@ body{
     align-content: center;
 }
 
+.text-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 ul{
     list-style: none;
 }
@@ -52,6 +60,11 @@ a{
     padding: 5px 10px;
     text-decoration: none;
 }
+
+h1{
+    font-size: 3em;
+    padding-bottom: 20px;
+} 
 
 
 
@@ -77,26 +90,22 @@ header{
     min-height: 500px;
 }
 
+.hero-content p{
+    font-size: 1.35em;
+    margin-bottom: 10px;
+}
+
 
 .f-center{
+    display: flex;
     justify-content: center;
     text-align: center;
     color: var(--color-secondary);
 
 }
 
-h1{
-    font-size: 3em;
-    padding-bottom: 20px;
-}
 
-p{
-    font-size: 1.33em;
-    margin-bottom: 10px;
-}
-
-.white-button, .black-button{
-    display: block;
+.white-button, .black-button, .blue-button{
     padding: 10px;
     margin: 10px;
     border-radius: 20px;
@@ -111,18 +120,100 @@ p{
 .black-button{
     background-color: var(--color-primary) ;
 
-}
+} 
 
 
 /* main */
 
-main section{
-    padding: 50px 0;
+h2{
+    font-size: 2.5em;
+    padding-bottom: 20px;
+    
 }
+
+.box-size p{
+    font-size: 1.2em;
+    padding-top: 40px;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+}
+ 
+.section-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.reverse{
+    display: flex;
+    flex-flow: row-reverse wrap;
+;
+} 
+
+
+
+.photo{
+    width: 60%;
+}
+
+
+.box-size{
+    max-width: 300px;
+
+}
+
+
+.text-config{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text-config p{
+    font-size: 1.4em;
+}
+
+.column-flex{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+
+.call-to-action{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+
+
+.question{
+    font-size: 1.8em;
+    padding: 50px;
+    background-image: url("../img/stars.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+} 
+
+.blue-button{
+    background-color: var(--color-accessory);
+    color: var(--color-secondary);
+    max-width: 150px;
+} 
+
 
 /* footer */
 
 footer{
     background-color: var(--color-primary);
-    color: var(--color-secondary);
+    color: var(--color-accessory);
 }
