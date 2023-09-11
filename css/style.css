@@ -12,11 +12,9 @@
     padding: 20px 5px;
 }
 
-
-.debug{
+/* .debug{
     border: 1px solid black;
-}
-
+}  */
 
 :root{
     --color-primary: #23272A;
@@ -27,6 +25,7 @@
 
 }
 
+/* background and utilities */
 
 body{
     background-color: var(--color-secondary);
@@ -44,17 +43,11 @@ body{
     align-content: center;
 }
 
-.text-flex{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
 ul{
     list-style: none;
 }
 
-a{
+ul>li>a{
     color: var(--color-secondary);
     display: block;
     padding: 5px 10px;
@@ -66,6 +59,32 @@ h1{
     padding-bottom: 20px;
 } 
 
+
+/* buttons */
+
+.white-button, .black-button, .purple-button{
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.white-button{
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+
+}
+
+.black-button{
+    background-color: var(--color-primary) ;
+    color: var(--color-secondary);
+
+} 
+.purple-button{
+    background-color: var(--color-accessory);
+    color: var(--color-secondary);
+    max-width: 150px;
+} 
 
 
 /* header */
@@ -81,46 +100,21 @@ header{
     background-position-x:30%;
 }
 
-#hero .container {
-    min-height: 500px;
-}
-
 .hero-content{
     max-width: 800px;
     min-height: 500px;
+    color: var(--color-secondary);
 }
 
-.hero-content p{
-    font-size: 1.35em;
+.main-paragraph{
+    font-size: 1.4em;
     margin-bottom: 10px;
 }
 
-
-.f-center{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    color: var(--color-secondary);
+.action-buttons-header{
+    padding-top: 20px;
 
 }
-
-
-.white-button, .black-button, .blue-button{
-    padding: 10px;
-    margin: 10px;
-    border-radius: 20px;
-}
-
-.white-button{
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
-
-}
-
-.black-button{
-    background-color: var(--color-primary) ;
-
-} 
 
 
 /* main */
@@ -128,48 +122,12 @@ header{
 h2{
     font-size: 2.5em;
     padding-bottom: 20px;
-    
 }
 
-.box-size p{
+.section-paragraph{
     font-size: 1.2em;
     padding-top: 40px;
 }
-
-.wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-
-
-}
- 
-.section-flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.reverse{
-    display: flex;
-    flex-flow: row-reverse wrap;
-;
-} 
-
-
-
-.photo{
-    width: 60%;
-}
-
-
-.box-size{
-    max-width: 300px;
-
-}
-
 
 .text-config{
     text-align: center;
@@ -177,24 +135,38 @@ h2{
     margin: 0 auto;
 }
 
-.text-config p{
-    font-size: 1.4em;
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+ 
+.f-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.column-flex{
+.reverse{
+    display: flex;
+    flex-flow: row-reverse wrap;
+} 
+
+.photo{
+    width: 60%;
+}
+
+.box-size{
+    max-width: 300px;
+
+}
+
+.f-column{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
 }
-
-
-.call-to-action{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-}
-
-
 
 .question{
     font-size: 1.8em;
@@ -204,16 +176,80 @@ h2{
     background-position: 50% 20%;
 } 
 
-.blue-button{
-    background-color: var(--color-accessory);
-    color: var(--color-secondary);
-    max-width: 150px;
-} 
-
-
 /* footer */
 
 footer{
     background-color: var(--color-primary);
     color: var(--color-accessory);
+    padding: 20px 50px;
 }
+
+.italian-flag{
+    width: 10%;
+}
+
+
+.top-footer{
+    max-width: 250px;
+    padding: 0px 10px;
+}
+
+.text-top-footer{
+    font-size: 1.8em;
+    padding-bottom: 20px;
+  }
+
+.country-option{
+    display: flex;
+    padding-bottom: 20px;
+    color: var(--color-secondary);
+}
+
+.icons{
+    display: flex;
+    flex-direction: row wrap;
+}
+
+.fa-brands{
+    padding-right: 20px;
+    color: var(--color-secondary);
+}
+
+.list-title{
+    padding: 5px 10px;
+}
+
+.f-footer-top{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border-bottom: 2px solid var(--color-accessory);
+}
+
+.f-footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+
+/* summary list entity modification */
+
+summary {
+    padding-left: 5px;
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none
+}
+  
+summary::after {
+    content: ' \02C5';
+    font-weight: bolder;
+}
+
+  details[open] summary:after {
+    content: " \02C3";
+    font-weight: bolder;
+  }
