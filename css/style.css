@@ -155,7 +155,7 @@ h2{
 } 
 
 .photo{
-    width: 60%;
+    width: 50%;
 }
 
 .box-size{
@@ -254,3 +254,25 @@ summary::after {
     content: " \02C3";
     font-weight: bolder;
   }
+
+/* layout waves */
+
+.wave{
+    background-image: url(../img/wave.svg);
+    min-width: 1200px;
+    min-height: 80px;
+    filter: opacity(0.035) drop-shadow(0 0 #F6F6F6);
+    display: flex;
+    background-repeat: repeat;
+}
+
+.reverse-wave{
+    background-image: url(../img/wave.svg);
+    rotate: 180%;
+    min-width: 1200px;
+    min-height: 80px;
+    filter: opacity(0.035) drop-shadow(0 0 #F6F6F6);
+    display: flex;
+    transform: rotate(180deg);
+
+}
