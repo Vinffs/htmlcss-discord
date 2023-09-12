@@ -272,6 +272,7 @@ summary::after {
     min-height: 80px;
     filter: opacity(0.035) drop-shadow(0 0 #F6F6F6);
     display: flex;
+    background-repeat: repeat;
     transform: rotate(180deg);
 
 }
