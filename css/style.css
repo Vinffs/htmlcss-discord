@@ -62,11 +62,27 @@ h1{
 
 /* buttons */
 
+.underline a:hover{
+    text-decoration: underline;
+}
+
 .white-button, .black-button, .purple-button{
     padding: 10px 15px;
     margin: 10px;
     border-radius: 20px;
     text-decoration: none;
+}
+
+.white-button:hover, .black-button:hover, .purple-button:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 15px, rgba(0, 0, 0, 0.12) 0px -15px 20px, rgba(0, 0, 0, 0.12) 0px 5px 10px, rgba(0, 0, 0, 0.17) 0px 10px 15px, rgba(0, 0, 0, 0.09) 0px -5px 5px;
+}
+
+.white-button:hover{
+    color: var(--color-accessory);
+}
+
+.black-button:hover, .purple-button:hover{
+    opacity: 1;
 }
 
 .white-button{
