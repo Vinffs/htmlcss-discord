@@ -249,28 +249,6 @@ footer{
     padding: 5px 0;
 }
 
-
-/* summary list entity modification */
-
-summary {
-    padding-left: 5px;
-    list-style: none;
-}
-
-summary::-webkit-details-marker {
-    display: none
-}
-  
-summary::after {
-    content: ' \02C5';
-    font-weight: bolder;
-}
-
-  details[open] summary:after {
-    content: " \02C3";
-    font-weight: bolder;
-  }
-
 /* layout waves */
 
 .wave{
@@ -291,4 +269,10 @@ summary::after {
     background-repeat: repeat;
     transform: rotate(180deg);
 
+}
+
+#language-name{
+    background-color: var(--color-primary);
+    border:none;
+    color: var(--color-secondary);
 }
