@@ -29,6 +29,7 @@
 
 body{
     background-color: var(--color-secondary);
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .even{
@@ -171,7 +172,7 @@ h2{
 } 
 
 .photo{
-    width: 50%;
+    width: 60%;
 }
 
 .box-size{
@@ -224,7 +225,7 @@ footer{
 
 .icons{
     display: flex;
-    flex-direction: row wrap;
+    flex-flow: row wrap;
 }
 
 .fa-brands{
@@ -276,3 +277,8 @@ footer{
     border:none;
     color: var(--color-secondary);
 }
+
+
+
+/* nitro page */
+
