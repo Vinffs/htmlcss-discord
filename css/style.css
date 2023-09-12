@@ -262,7 +262,7 @@ summary::after {
     min-width: 1200px;
     min-height: 80px;
     filter: opacity(0.035) drop-shadow(0 0 #F6F6F6);
-    display: flex;
+    display: block;
     background-repeat: repeat;
 }
 
@@ -271,7 +271,7 @@ summary::after {
     min-width: 1200px;
     min-height: 80px;
     filter: opacity(0.035) drop-shadow(0 0 #F6F6F6);
-    display: flex;
+    display: block;
     background-repeat: repeat;
     transform: rotate(180deg);
 
