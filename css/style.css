@@ -268,7 +268,6 @@ summary::after {
 
 .reverse-wave{
     background-image: url(../img/wave.svg);
-    rotate: 180%;
     min-width: 1200px;
     min-height: 80px;
     filter: opacity(0.035) drop-shadow(0 0 #F6F6F6);
